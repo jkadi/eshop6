@@ -1,4 +1,7 @@
-1- Para empezar iniciaremos Git:
+MANUAL
+
+1- Para empezar iniciaremos Git en el directorio que queremos
+sincronizar en el repositorio:
 	
 	git init
 
@@ -24,8 +27,10 @@ con un mensaje a la actualizacion:
 
 --------------------------------------------------------------------------------------------------------
 
+OTROS COMANDOS
+
 -Para borrar usaremos git rm 'archivo' para confirmar directamente
-para posteriormente volver a ejecutar la actualizacion con git push
+y posteriormente volver a ejecutar la actualizacion con git push
 (-r para borrar carpetas).
 
 -Para evitar que se añadan archivos temporales de los editores de texto
