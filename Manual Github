@@ -21,3 +21,19 @@ con un mensaje a la actualizacion:
 6- Por ultimo ejecutamos la actualizacion:
 
 	git push
+
+--------------------------------------------------------------------------------------------------------
+
+-Para borrar usaremos git rm 'archivo' para confirmar directamente
+para posteriormente volver a ejecutar la actualizacion con git push
+(-r para borrar carpetas).
+
+-Para evitar que se añadan archivos temporales de los editores de texto
+editar el archivo .gitignore (si no esta activar Mostrar archivos o
+carpetas ocultos) como se indica en este sitio web:
+
+http://symfony.es/documentacion/como-configurar-bien-el-archivo-gitignore-para-las-aplicaciones-symfony2/
+
+-Si te confundes puedes deshacer los cambios hasta el ultimo commit mediante git pull.
+
+-Manual de Git: http://rogerdudler.github.io/git-guide/index.es.html
