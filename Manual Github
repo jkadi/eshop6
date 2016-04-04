@@ -1,3 +1,23 @@
 1- Para empezar iniciaremos Git:
 	
 	git init
+
+2- Modificar el/los archivo/s que queramos.
+
+3- Seguir todos los archivos del repositorio:
+
+	git add .
+
+4- Ahora comprobamos que los archivos que hemos modificado
+estan de color verde, es decir los estamos siguiendo:
+
+	git status
+
+5- Luego vamos a realizar confirmar los cambios añadiendo ademas
+con un mensaje a la actualizacion:
+
+	git commit -m "Mensaje de actualizacion"
+
+6- Por ultimo ejecutamos la actualizacion:
+
+	git push
