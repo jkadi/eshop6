@@ -1,0 +1,9 @@
+<dl>
+  <dt>Nombre</dt>
+  <dd><%= @provider.name %></dd>
+  <dt>Teléfono</dt>
+  <dd><%= @provider.telephone %></dd>
+</dl>
+
+<%= link_to 'Editar', :action => 'edit', :id => @provider %> |
+<%= link_to 'Volver', :action => 'index' %>

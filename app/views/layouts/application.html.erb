@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= @page_title || 'Merchuca' %></title>
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<div id="header">
+  <h1 id="logo">Merchuca&trade;</h1>
+    <h2 id="slogan">Merchandaising de la Universidad de Cádiz</h2>
+
+</div>
+
+<div id="menu">
+  <ul>
+    <li><a href="/admin/provider/index">Proveedores</a>&nbsp;|&nbsp;</li>
+    <li><a href="/">Catálogo</a>&nbsp;|&nbsp;</li>
+    <li><a href="/about">Acerca de</a>&nbsp;</li>
+  </ul>
+</div>
+
+<div id="content">
+  <h1><%= @page_title if @page_title %></h1>
+  <% if flash[:notice] %>
+      <div id="notice"><%= flash[:notice] %></div>
+  <% end %>
+  <%= yield %>
+</div>
+
+<% if @cart %>
+    <div id="shopping_cart"><%= render :partial => 'cart/cart' %></div>
+<% end %>
+
+<div id="footer">
+  &copy; <%= Time.now.year %> Merchuca - Estefanía Becerra - Juan José García - Ana Pastor - Ernesto Wulff
+</div>
+</body>
+</html>
