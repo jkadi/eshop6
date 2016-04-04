@@ -16,7 +16,7 @@ estan de color verde, es decir los estamos siguiendo:
 
 	git status
 
-5- Luego vamos a realizar confirmar los cambios añadiendo ademas
+5- Luego vamos a confirmar los cambios añadiendo ademas
 con un mensaje a la actualizacion:
 
 	git commit -m "Mensaje de actualizacion"
